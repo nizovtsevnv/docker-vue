@@ -5,4 +5,4 @@ LABEL maintainer="nizovtsevnv@gmail.com"
 VOLUME /vue
 
 WORKDIR /vue
-RUN npm install --progress=false -g @vue/cli
+RUN npm install --quiet -g @vue/cli
