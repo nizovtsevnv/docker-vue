@@ -5,7 +5,7 @@ Docker image based on `node:alpine`.
 ### Usage
 ```
 docker run -ti \
-  -v .:/usr/src:rw \
+  -v .:/vue:rw \
   nizovtsevnv/vue
 ```
 Or, with docker-compose:
@@ -15,7 +15,7 @@ services:
   vue:
     image: nizovtsevnv/vue
     volumes:
-      - .:/usr/src:rw
+      - .:/vue:rw
 ```
 
 Don't forget get permissions after making new files: `sudo chown $USER:$GROUP .`
