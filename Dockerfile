@@ -2,7 +2,8 @@ FROM node:alpine
 
 LABEL maintainer="nizovtsevnv@gmail.com"
 
-VOLUME /vue
+EXPOSE 8080
+VOLUME /app
 
-WORKDIR /vue
+WORKDIR /app
 RUN npm install --quiet -g @vue/cli
